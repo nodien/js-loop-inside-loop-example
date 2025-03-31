@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multiplication Table</title>
+</head>
+<body>
+
+<script>
+  let sout = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";
+  let i = 1, j;
+
+  while (i <= 10) {
+    sout += "<tr>";
+    j = 1;  // Reset j mỗi lần lặp hàng mới
+    while (j <= 10) {
+      sout += "<td>" + (i * j) + "</td>";
+      j++;
+    }
+    sout += "</tr>";
+    i++;
+  }
+
+  sout += "</table>"; // Kết thúc bảng
+  document.write(sout); // Hiển thị bảng trên trang
+</script>
+
+</body>
+</html>
